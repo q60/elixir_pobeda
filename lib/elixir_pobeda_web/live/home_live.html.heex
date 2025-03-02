@@ -7,14 +7,16 @@
   <p class="list">3) BEAM goes BRRRRRRRRRR</p>
   <p class="list">4) читыри</p>
   <p class="list">5) очередная эликсир победа</p>
-  <p id="error" class="list">6) {"[error] ** (Protocol.UndefinedError) protocol Phoenix.HTML.Safe not implemented for type Function. This protocol is implemented for the following type(s): Atom, BitString, Date, DateTime, Float, Integer, List, NaiveDateTime, Phoenix.LiveComponent.CID, Phoenix.LiveView.Component, Phoenix.LiveView.Comprehension, Phoenix.LiveView.JS, Phoenix.LiveView.Rendered, Time, Tuple, URI"}</p>
+  <p id="error" class="list">
+    6) {"[error] ** (Protocol.UndefinedError) protocol Phoenix.HTML.Safe not implemented for type Function. This protocol is implemented for the following type(s): Atom, BitString, Date, DateTime, Float, Integer, List, NaiveDateTime, Phoenix.LiveComponent.CID, Phoenix.LiveView.Component, Phoenix.LiveView.Comprehension, Phoenix.LiveView.JS, Phoenix.LiveView.Rendered, Time, Tuple, URI"}
+  </p>
   <h3>на эликсире написаны:</h3>
   <p class="list">1) discord</p>
   <h2>ЭЛИКСИР ПОБЕДА УЖЕ <span id="years">{@years_since}</span> ГОД</h2>
   <video controls>
-    <source src={~p"/videos/hello_joe.mp4"}/>
+    <source src={~p"/videos/hello_joe.mp4"} />
   </video>
   <%= for img <- ~w(logo.svg durka.gif elixir_no_support.png lupasit.gif bomb.jpg hello_joe.gif) do %>
-    <img class="gif" src={~p"/images/#{img}"}/>
+    <img class="gif" src={~p"/images/#{img}"} />
   <% end %>
 </div>
