@@ -2,24 +2,34 @@
 <div id="container">
   <h1>2025 ЭТО ОЧЕРЕДНОЙ ГОД ЭЛИКСИР ПОБЕДЫ</h1>
   <h3>почему 2025 это очередной год эликсир победы?</h3>
-  <p class="list">1) эликсир победа</p>
-  <p class="list">2) FUNCTIONAL DISTRIBUTED FAULT-TOLERANT CONCURRENT PROCESS-ORIENTED</p>
-  <p class="list">3) BEAM goes BRRRRRRRRRR</p>
-  <p class="list">4) читыри</p>
-  <p class="list">5) очередная эликсир победа</p>
-  <p class="list">
-    6)
-    <span id="error">
-      {"[error] ** (Protocol.UndefinedError) protocol Phoenix.HTML.Safe not implemented for type Function. This protocol is implemented for the following type(s): Atom, BitString, Date, DateTime, Float, Integer, List, NaiveDateTime, Phoenix.LiveComponent.CID, Phoenix.LiveView.Component, Phoenix.LiveView.Comprehension, Phoenix.LiveView.JS, Phoenix.LiveView.Rendered, Time, Tuple, URI"}
-    </span>
-  </p>
+  <ol>
+    <li>эликсир победа</li>
+    <li>FUNCTIONAL DISTRIBUTED FAULT-TOLERANT CONCURRENT PROCESS-ORIENTED ACTOR MODEL</li>
+    <li>BEAM goes BRRRRRRRRRR</li>
+    <li><code>spawn(:your_mom@her_house, &me/0)</code></li>
+    <li>
+      <code>
+        BREAK: (a)bort (A)bort with dump (c)ontinue (p)roc info (i)nfo (l)oaded (v)ersion (k)ill (D)b-tables (d)istribution
+      </code>
+    </li>
+    <li>
+      <code>
+        {"[error] ** (Protocol.UndefinedError) protocol Phoenix.HTML.Safe not implemented for type Function. This protocol is implemented for the following type(s): Atom, BitString, Date, DateTime, Float, Integer, List, NaiveDateTime, Phoenix.LiveComponent.CID, Phoenix.LiveView.Component, Phoenix.LiveView.Comprehension, Phoenix.LiveView.JS, Phoenix.LiveView.Rendered, Time, Tuple, URI"}
+      </code>
+    </li>
+  </ol>
+
   <h3>на эликсире написаны:</h3>
-  <p class="list">1) discord</p>
+  <ol>
+    <li>discord<sup>[1]</sup></li>
+  </ol>
+  <p><sup>[1]</sup>: половина бекэнда</p>
   <h2>ЭЛИКСИР ПОБЕДА УЖЕ <span id="years">{@years_since}</span> ГОД</h2>
+  <h2>ГОНЯТЬ HTML ПО ВЕБСОКЕТАМ ОХУЕННО</h2>
+  <%= for img <- ~w(hello_joe.gif logo.svg elixir_no_support.png memory_usage.jpg otp_bank.svg) do %>
+    <img class="gif" src={~p"/images/#{img}"} />
+  <% end %>
   <video controls>
     <source src={~p"/videos/hello_joe.mp4"} />
   </video>
-  <%= for img <- ~w(logo.svg durka.gif elixir_no_support.png lupasit.gif bomb.jpg hello_joe.gif) do %>
-    <img class="gif" src={~p"/images/#{img}"} />
-  <% end %>
 </div>
