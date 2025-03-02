@@ -3,6 +3,7 @@
 #years {
     color: #82c4f2;
 }
+
 code {
     font-family: "IBM Plex Mono", monospace;
 }
@@ -93,4 +94,14 @@ h1 {
 
 .list {
     margin: 0.5vh;
+}
+
+footer {
+    text-align: center;
+    margin: auto;
+
+    h3 a {
+        text-decoration: underline;
+        color: #FFFFFF;
+    }
 }
