@@ -20,6 +20,7 @@ defmodule ElixirPobedaWeb.ConnCase do
   using do
     quote do
       use ElixirPobedaWeb, :verified_routes
+
       import ElixirPobedaWeb.ConnCase
       import Phoenix.ConnTest
       import Plug.Conn
