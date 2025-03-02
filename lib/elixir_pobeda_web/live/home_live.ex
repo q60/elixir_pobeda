@@ -1,11 +1,11 @@
 defmodule ElixirPobedaWeb.HomeLive do
+  @moduledoc false
   use ElixirPobedaWeb, :live_view
+
   @elixir_date ~U[2012-05-25 19:39:00Z]
 
   def years do
-    nanoseconds =
-      DateTime.utc_now()
-      |> DateTime.diff(@elixir_date, :nanosecond)
+    nanoseconds = DateTime.diff(DateTime.utc_now(), @elixir_date, :nanosecond)
 
     nanoseconds / 1_000_000_000 / 3600 / 24 / 365
   end

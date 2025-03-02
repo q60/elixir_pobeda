@@ -19,15 +19,14 @@ defmodule ElixirPobedaWeb.ConnCase do
 
   using do
     quote do
+      use ElixirPobedaWeb, :verified_routes
+      import ElixirPobedaWeb.ConnCase
+      import Phoenix.ConnTest
+      import Plug.Conn
       # The default endpoint for testing
       @endpoint ElixirPobedaWeb.Endpoint
 
-      use ElixirPobedaWeb, :verified_routes
-
       # Import conveniences for testing with connections
-      import Plug.Conn
-      import Phoenix.ConnTest
-      import ElixirPobedaWeb.ConnCase
     end
   end
 
