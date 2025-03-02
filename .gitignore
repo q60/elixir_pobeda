@@ -35,3 +35,5 @@ elixir_pobeda-*.tar
 npm-debug.log
 /assets/node_modules/
 
+# Docker image
+elixir_pobeda.tar*

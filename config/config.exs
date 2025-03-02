@@ -13,6 +13,7 @@ config :elixir_pobeda,
 # Configures the endpoint
 config :elixir_pobeda, ElixirPobedaWeb.Endpoint,
   url: [host: "localhost"],
+  check_origin: ["//localhost", "//xn--80abjdnang4ajkk6m.xn--p1ai"],
   adapter: Bandit.PhoenixAdapter,
   render_errors: [
     formats: [html: ElixirPobedaWeb.ErrorHTML, json: ElixirPobedaWeb.ErrorJSON],
